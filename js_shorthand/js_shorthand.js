@@ -1,3 +1,21 @@
+// declare x and y but define z:
+let x, y, z = "thing";
+
+// define multiple variables with commas
+let a = "something",
+    b = "else",
+    c = "done";
+
+// similar to hacklang, can provide a fallback
+let test = undefined;
+let foo = test || "default value";
+foo; // 'default value'
+
+test = 'not nothing';
+foo = test || "default value";
+foo; // 'not nothing'
+
+
 // write a function as a variable with =>
 const writeMyName = (shouldWriteName) => {
   typeof shouldWriteName;
